@@ -1,42 +1,78 @@
-@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+:root {
+	--primary-color: #51017c;
+	--white-color: #f8f8f8;
+	--text-gray: #6f6f6f;
+	--bg-gray: #e0e0e0;
+}
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
 }
 
 body {
-  font-size: 100%;
-  background-color: #ffffff;
+	background-color: var(--white-color);
+	font-family: 'Montserrat', sans-serif;
 }
 
-/* menu */
+ul li{
+    list-style: none;;
+}
 
-.cabecalho {
-  display: flex;
-  flex-direction: row;
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/**********
+NAV
+***********/
+
+.header {
+	display: flex;
   align-items: center;
-  justify-content: space-around;
-  padding: 8px 24px;
-  background-color: #ffffff ; 
+  justify-content: space-between;
+  padding: 1rem 10%;
 }
 
-.cabecalho-imagem {
-  height: 70px;
+.nav-items{
+	display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
-.cabecalho-menu {
-  display: flex;
-  gap: 32px;
-}
-
-.cabecalho-menu-item {
-  font-family: 'Montserra', sans-serif;
-  color: #000000;
-  font-weight: 400;
+.nav-item {
+  padding: 0 1rem;
+  display: inline-block;
+  text-transform: uppercase;
   font-weight: bold;
-  font-size: 18px
+  color: var(--primary-color);
+  text-align: center;
+  
 }
 
+.logo {
+  width: clamp(7rem, 100%, 12rem);
+}
+
+/**********
+HOME
+***********/
+
+.home {
+	
+}
+
+.about-us {
+	background-color: var(--bg-gray);
+}
